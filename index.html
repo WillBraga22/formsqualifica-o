@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pré-Qualificação | X Capital</title>
+  <meta name="description" content="Formulário de pré-qualificação da X Capital para entender seu perfil e estruturar uma estratégia de investimento." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="brand-card">
+          <p class="eyebrow">X Capital Partners</p>
+          <h1>Descubra qual estratégia combina melhor com seu momento financeiro</h1>
+          <p class="subtitle">
+            Responda algumas perguntas rápidas para entendermos seu perfil e identificar a melhor forma de estruturar um projeto de aquisição, investimento ou construção patrimonial.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-wrapper">
+        <div class="intro-card">
+          <span>Pré-qualificação</span>
+          <h2>Investir sem estratégia é só separar dinheiro.</h2>
+          <p>
+            Na X Capital, analisamos seu momento financeiro para entender qual caminho faz mais sentido: comprar um imóvel, investir em patrimônio ou estruturar uma aquisição de forma mais inteligente.
+          </p>
+        </div>
+
+        <form id="leadForm" class="form-card">
+          <input type="hidden" id="origem" name="origem" value="Direto" />
+
+          <div class="field-group two-columns">
+            <label>
+              Nome completo
+              <input type="text" name="nome" placeholder="Digite seu nome" required />
+            </label>
+
+            <label>
+              WhatsApp
+              <input type="tel" name="whatsapp" placeholder="(00) 00000-0000" required />
+            </label>
+          </div>
+
+          <label>
+            Cidade e estado
+            <input type="text" name="cidade" placeholder="Ex: Jaú, SP" required />
+          </label>
+
+          <fieldset>
+            <legend>Hoje você é:</legend>
+            <div class="options-grid three">
+              <label><input type="radio" name="perfil" value="Autônomo" required><span>Autônomo</span></label>
+              <label><input type="radio" name="perfil" value="CLT"><span>CLT</span></label>
+              <label><input type="radio" name="perfil" value="Empresário"><span>Empresário</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quanto você fatura por ano, em média?</legend>
+            <div class="options-grid">
+              <label><input type="radio" name="faturamento" value="Até R$ 50 mil" required><span>Até R$ 50 mil</span></label>
+              <label><input type="radio" name="faturamento" value="Até R$ 100 mil"><span>Até R$ 100 mil</span></label>
+              <label><input type="radio" name="faturamento" value="Até R$ 200 mil"><span>Até R$ 200 mil</span></label>
+              <label><input type="radio" name="faturamento" value="Até R$ 500 mil"><span>Até R$ 500 mil</span></label>
+              <label><input type="radio" name="faturamento" value="Acima de R$ 1 milhão"><span>Acima de R$ 1 milhão</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Pensando em investimento hoje, qual opção combina melhor com você?</legend>
+            <div class="options-list">
+              <label><input type="radio" name="objetivo" value="Comprar um imóvel para morar" required><span>Comprar um imóvel para morar</span></label>
+              <label><input type="radio" name="objetivo" value="Comprar um imóvel para alugar e deixar ele se pagar"><span>Comprar um imóvel para alugar e deixar ele se pagar</span></label>
+              <label><input type="radio" name="objetivo" value="Ter uma opção de investimento para construir patrimônio"><span>Ter uma opção de investimento para construir patrimônio</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Quanto de contribuição mensal hoje não atrapalha seu orçamento para investir nesse projeto?</legend>
+            <div class="options-grid">
+              <label><input type="radio" name="contribuicao" value="Até R$ 500 por mês" required><span>Até R$ 500</span></label>
+              <label><input type="radio" name="contribuicao" value="De R$ 500 a R$ 1.500 por mês"><span>R$ 500 a R$ 1.500</span></label>
+              <label><input type="radio" name="contribuicao" value="De R$ 1.500 a R$ 3.000 por mês"><span>R$ 1.500 a R$ 3.000</span></label>
+              <label><input type="radio" name="contribuicao" value="De R$ 3.000 a R$ 5.000 por mês"><span>R$ 3.000 a R$ 5.000</span></label>
+              <label><input type="radio" name="contribuicao" value="Acima de R$ 5.000 por mês"><span>Acima de R$ 5.000</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Em quanto tempo você gostaria de iniciar esse projeto?</legend>
+            <div class="options-grid two">
+              <label><input type="radio" name="prazo" value="O quanto antes" required><span>O quanto antes</span></label>
+              <label><input type="radio" name="prazo" value="Nos próximos 3 meses"><span>Nos próximos 3 meses</span></label>
+              <label><input type="radio" name="prazo" value="Nos próximos 6 meses"><span>Nos próximos 6 meses</span></label>
+              <label><input type="radio" name="prazo" value="Ainda estou estudando as possibilidades"><span>Ainda estou estudando</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Você já conhece alguma estratégia de consórcio para investimento?</legend>
+            <div class="options-list">
+              <label><input type="radio" name="conhecimento" value="Sim, já conheço" required><span>Sim, já conheço</span></label>
+              <label><input type="radio" name="conhecimento" value="Já ouvi falar, mas não entendo bem"><span>Já ouvi falar, mas não entendo bem</span></label>
+              <label><input type="radio" name="conhecimento" value="Não conheço, mas tenho interesse em entender"><span>Não conheço, mas tenho interesse em entender</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Melhor horário para contato</legend>
+            <div class="options-grid two">
+              <label><input type="radio" name="horario" value="Manhã" required><span>Manhã</span></label>
+              <label><input type="radio" name="horario" value="Tarde"><span>Tarde</span></label>
+              <label><input type="radio" name="horario" value="Noite"><span>Noite</span></label>
+              <label><input type="radio" name="horario" value="Pode me chamar pelo WhatsApp"><span>Pode me chamar pelo WhatsApp</span></label>
+            </div>
+          </fieldset>
+
+          <button id="submitButton" type="submit">Enviar minha pré-qualificação</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
